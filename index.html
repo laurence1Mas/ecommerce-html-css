@@ -68,6 +68,201 @@
                 </div>
             </div>
         </section>
+        <section class="filters-section">
+            <h2>Filtrer les produits</h2>
+            <div class="filters-container">      
+                <div class="filter-group">
+                    <h3>Catégories</h3>
+                    <div class="filter-options">
+                        <label><input type="checkbox" name="category" value="electronics"> Électronique</label>
+                        <label><input type="checkbox" name="category" value="clothing"> Vêtements</label>
+                        <label><input type="checkbox" name="category" value="home"> Maison</label>
+                        <label><input type="checkbox" name="category" value="sports"> Sports</label>
+                        <label><input type="checkbox" name="category" value="beauty"> Beauté</label>
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <h3>Prix</h3>
+                    <div class="price-range">
+                        <input type="range" min="0" max="1000" value="500" class="price-slider">
+                        <div class="price-values">
+                            <span>0€</span>
+                            <span>500€</span>
+                            <span>1000€</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <h3>Marques</h3>
+                    <div class="filter-options">
+                        <label><input type="checkbox" name="brand" value="brand1"> Marque A</label>
+                        <label><input type="checkbox" name="brand" value="brand2"> Marque B</label>
+                        <label><input type="checkbox" name="brand" value="brand3"> Marque C</label>
+                        <label><input type="checkbox" name="brand" value="brand4"> Marque D</label>
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <h3>Évaluation</h3>
+                    <div class="filter-options">
+                        <label><input type="checkbox" name="rating" value="5"> ⭐⭐⭐⭐⭐</label>
+                        <label><input type="checkbox" name="rating" value="4"> ⭐⭐⭐⭐ et plus</label>
+                        <label><input type="checkbox" name="rating" value="3"> ⭐⭐⭐ et plus</label>
+                    </div>
+                </div>
+                
+                <button class="apply-filters">Appliquer les filtres</button>
+                <button class="reset-filters">Réinitialiser</button>
+            </div>
+        </section>
+        <section class="products-section">
+            <div class="section-header">
+                <h2>Nos Produits</h2>
+                <div class="sort-options">
+                    <label for="sort">Trier par:</label>
+                    <select id="sort">
+                        <option value="popular">Popularité</option>
+                        <option value="price-low">Prix croissant</option>
+                        <option value="price-high">Prix décroissant</option>
+                        <option value="newest">Nouveautés</option>
+                        <option value="rating">Meilleures notes</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Produit 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/imgs/products/prod-1.jpg" alt="Smartphone">
+                        <span class="discount-badge">-20%</span>
+                        <button class="wishlist-btn">❤️</button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Smartphone Premium</h3>
+                        <p class="product-description">Smartphone haut de gamme avec écran AMOLED et triple caméra.</p>
+                        <div class="product-rating">
+                            ⭐⭐⭐⭐☆ <span class="rating-value">4.2</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">599€</span>
+                            <span class="original-price">749€</span>
+                        </div>
+                        <button class="add-to-cart">Ajouter au panier</button>
+                    </div>
+                </div>
+                
+                <!-- Produit 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/imgs/products/prod-2.jpg" alt="Casque Audio">
+                        <button class="wishlist-btn">❤️</button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Casque Audio Sans Fil</h3>
+                        <p class="product-description">Casque audio avec réduction de bruit active et autonomie de 30h.</p>
+                        <div class="product-rating">
+                            ⭐⭐⭐⭐⭐ <span class="rating-value">4.8</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">199€</span>
+                        </div>
+                        <button class="add-to-cart">Ajouter au panier</button>
+                    </div>
+                </div>
+                
+                <!-- Produit 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/imgs/products/prod-3.jpg" alt="Montre Connectée">
+                        <span class="new-badge">Nouveau</span>
+                        <button class="wishlist-btn">❤️</button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Montre Connectée Sport</h3>
+                        <p class="product-description">Montre connectée avec suivi d'activité et moniteur de fréquence cardiaque.</p>
+                        <div class="product-rating">
+                            ⭐⭐⭐⭐☆ <span class="rating-value">4.3</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">149€</span>
+                        </div>
+                        <button class="add-to-cart">Ajouter au panier</button>
+                    </div>
+                </div>
+                
+                <!-- Produit 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/imgs/products/prod-4.jpg" alt="Enceinte Bluetooth">
+                        <span class="discount-badge">-15%</span>
+                        <button class="wishlist-btn">❤️</button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Enceinte Bluetooth</h3>
+                        <p class="product-description">Enceinte portable avec son stéréo et résistance à l'eau.</p>
+                        <div class="product-rating">
+                            ⭐⭐⭐☆☆ <span class="rating-value">3.7</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">79€</span>
+                            <span class="original-price">93€</span>
+                        </div>
+                        <button class="add-to-cart">Ajouter au panier</button>
+                    </div>
+                </div>
+                
+                <!-- Produit 5 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/imgs/products/prod-5.jpg" alt="T-shirt">
+                        <button class="wishlist-btn">❤️</button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">T-Shirt Premium</h3>
+                        <p class="product-description">T-shirt en coton bio avec design exclusif.</p>
+                        <div class="product-rating">
+                            ⭐⭐⭐⭐☆ <span class="rating-value">4.1</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">29€</span>
+                        </div>
+                        <button class="add-to-cart">Ajouter au panier</button>
+                    </div>
+                </div>
+                
+                <!-- Produit 6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/imgs/products/prod-6.jpg" alt="Chaussures">
+                        <span class="new-badge">Nouveau</span>
+                        <button class="wishlist-btn">❤️</button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Chaussures de Sport</h3>
+                        <p class="product-description">Chaussures légères avec amorti pour le running.</p>
+                        <div class="product-rating">
+                            ⭐⭐⭐⭐⭐ <span class="rating-value">4.9</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">89€</span>
+                        </div>
+                        <button class="add-to-cart">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pagination">
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <span>...</span>
+                <button class="page-btn">10</button>
+                <button class="next-btn">Suivant →</button>
+            </div>
+        </section>
     </main>
 </body>
 
