@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>ecommerce</title>
+</head>
+
+<body>
+<header class="header">
+        <h1>ShopElegance</h1>
+        <div class="search-container">
+            <input type="text" class="search" placeholder="Rechercher des produits...">
+            <button class="search-btn">🔍</button>
+        </div>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li class="nav-item"><a href="#home">Accueil</a></li>
+                <li class="nav-item"><a href="#products">Produits</a></li>
+                <li class="nav-item"><a href="#about">À propos</a></li>
+                <li class="nav-item"><a href="#contact">Contact</a></li>
+                <li class="nav-item">
+                    <a href="#" class="cart-icon">
+                        <img src="assets/imgs/shopping.png" alt="Panier">
+                        <span class="cart-count">3</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">
+                        <img src="assets/imgs/1.jpg" alt="Profil Utilisateur">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-content">
+        <section class="hero_section">
+            <div class="hero-text">
+                <h1>Bienvenue dans notre boutique!</h1>
+                <p>Découvrez les meilleurs produits aux prix imbattables.</p>
+                <button class="shop-now">Acheter maintenant</button>
+            </div>
+            <div class="hero-img">
+                <img src="assets/imgs/hero/2.jpg" alt="Image Hero">
+            </div>
+        </section>
+        <section class="about-section">
+            <h2>À propos de nous</h2>
+            <p>Nous nous engageons à fournir la meilleure expérience d'achat en ligne avec des produits de qualité, des prix compétitifs et un service client exceptionnel.</p>
+            <div class="about-features">
+                <div class="feature">
+                    <h3>🚚 Livraison Rapide</h3>
+                    <p>Livraison gratuite pour les commandes de plus de 50€</p>
+                </div>
+                <div class="feature">
+                    <h3>🔒 Paiement Sécurisé</h3>
+                    <p>Transactions cryptées pour protéger vos informations</p>
+                </div>
+                <div class="feature">
+                    <h3>↩️ Retours Faciles</h3>
+                    <p>Retours acceptés sous 30 jours sans poser de questions</p>
+                </div>
+                <div class="feature">
+                    <h3>📞 Support 24/7</h3>
+                    <p>Notre équipe est disponible pour vous aider à tout moment</p>
+                </div>
+            </div>
+        </section>
+        <section class="filters-section">
+            <h2>Filtrer les produits</h2>
+            <div class="filters-container">      
+                <div class="filter-group">
+                    <h3>Catégories</h3>
+                    <div class="filter-options">
+                        <label><input type="checkbox" name="category" value="electronics"> Électronique</label>
+                        <label><input type="checkbox" name="category" value="clothing"> Vêtements</label>
+                        <label><input type="checkbox" name="category" value="home"> Maison</label>
+                        <label><input type="checkbox" name="category" value="sports"> Sports</label>
+                        <label><input type="checkbox" name="category" value="beauty"> Beauté</label>
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <h3>Prix</h3>
+                    <div class="price-range">
+                        <input type="range" min="0" max="1000" value="500" class="price-slider">
+                        <div class="price-values">
+                            <span>0€</span>
+                            <span>500€</span>
+                            <span>1000€</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <h3>Marques</h3>
+                    <div class="filter-options">
+                        <label><input type="checkbox" name="brand" value="brand1"> Marque A</label>
+                        <label><input type="checkbox" name="brand" value="brand2"> Marque B</label>
+                        <label><input type="checkbox" name="brand" value="brand3"> Marque C</label>
+                        <label><input type="checkbox" name="brand" value="brand4"> Marque D</label>
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <h3>Évaluation</h3>
+                    <div class="filter-options">
+                        <label><input type="checkbox" name="rating" value="5"> ⭐⭐⭐⭐⭐</label>
+                        <label><input type="checkbox" name="rating" value="4"> ⭐⭐⭐⭐ et plus</label>
+                        <label><input type="checkbox" name="rating" value="3"> ⭐⭐⭐ et plus</label>
+                    </div>
+                </div>
+                
+                <button class="apply-filters">Appliquer les filtres</button>
+                <button class="reset-filters">Réinitialiser</button>
+            </div>
+        </section>
+        <section class="products-section">
+            <div class="section-header">
+                <h2>Nos Produits</h2>
+                <div class="sort-options">
+                    <label for="sort">Trier par:</label>
+                    <select id="sort">
+                        <option value="popular">Popularité</option>
+                        <option value="price-low">Prix croissant</option>
+                        <option value="price-high">Prix décroissant</option>
+                        <option value="newest">Nouveautés</option>
+                        <option value="rating">Meilleures notes</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Produit 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/imgs/products/prod-1.jpg" alt="Smartphone">
+                        <span class="discount-badge">-20%</span>
+                        <button class="wishlist-btn">❤️</button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Smartphone Premium</h3>
+                        <p class="product-description">Smartphone haut de gamme avec écran AMOLED et triple caméra.</p>
+                        <div class="product-rating">
+                            ⭐⭐⭐⭐☆ <span class="rating-value">4.2</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">599€</span>
+                            <span class="original-price">749€</span>
+                        </div>
+                        <button class="add-to-cart">Ajouter au panier</button>
+                    </div>
+                </div>
+                
+                <!-- Produit 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/imgs/products/prod-2.jpg" alt="Casque Audio">
+                        <button class="wishlist-btn">❤️</button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Casque Audio Sans Fil</h3>
+                        <p class="product-description">Casque audio avec réduction de bruit active et autonomie de 30h.</p>
+                        <div class="product-rating">
+                            ⭐⭐⭐⭐⭐ <span class="rating-value">4.8</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">199€</span>
+                        </div>
+                        <button class="add-to-cart">Ajouter au panier</button>
+                    </div>
+                </div>
+                
+                <!-- Produit 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/imgs/products/prod-3.jpg" alt="Montre Connectée">
+                        <span class="new-badge">Nouveau</span>
+                        <button class="wishlist-btn">❤️</button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Montre Connectée Sport</h3>
+                        <p class="product-description">Montre connectée avec suivi d'activité et moniteur de fréquence cardiaque.</p>
+                        <div class="product-rating">
+                            ⭐⭐⭐⭐☆ <span class="rating-value">4.3</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">149€</span>
+                        </div>
+                        <button class="add-to-cart">Ajouter au panier</button>
+                    </div>
+                </div>
+                
+                <!-- Produit 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/imgs/products/prod-4.jpg" alt="Enceinte Bluetooth">
+                        <span class="discount-badge">-15%</span>
+                        <button class="wishlist-btn">❤️</button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Enceinte Bluetooth</h3>
+                        <p class="product-description">Enceinte portable avec son stéréo et résistance à l'eau.</p>
+                        <div class="product-rating">
+                            ⭐⭐⭐☆☆ <span class="rating-value">3.7</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">79€</span>
+                            <span class="original-price">93€</span>
+                        </div>
+                        <button class="add-to-cart">Ajouter au panier</button>
+                    </div>
+                </div>
+                
+                <!-- Produit 5 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/imgs/products/prod-5.jpg" alt="T-shirt">
+                        <button class="wishlist-btn">❤️</button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">T-Shirt Premium</h3>
+                        <p class="product-description">T-shirt en coton bio avec design exclusif.</p>
+                        <div class="product-rating">
+                            ⭐⭐⭐⭐☆ <span class="rating-value">4.1</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">29€</span>
+                        </div>
+                        <button class="add-to-cart">Ajouter au panier</button>
+                    </div>
+                </div>
+                
+                <!-- Produit 6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/imgs/products/prod-6.jpg" alt="Chaussures">
+                        <span class="new-badge">Nouveau</span>
+                        <button class="wishlist-btn">❤️</button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Chaussures de Sport</h3>
+                        <p class="product-description">Chaussures légères avec amorti pour le running.</p>
+                        <div class="product-rating">
+                            ⭐⭐⭐⭐⭐ <span class="rating-value">4.9</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">89€</span>
+                        </div>
+                        <button class="add-to-cart">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pagination">
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <span>...</span>
+                <button class="page-btn">10</button>
+                <button class="next-btn">Suivant →</button>
+            </div>
+        </section>
+        <section class="newsletter-section">
+            <div class="newsletter-content">
+                <h2>Abonnez-vous à notre newsletter</h2>
+                <p>Recevez des offres exclusives et soyez informé des nouveaux produits</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Votre adresse email" required>
+                    <button type="submit">S'abonner</button>
+                </form>
+            </div>
+        </section>
+    </main>
+        <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>ShopElegance</h3>
+                <p>Votre destination shopping en ligne pour des produits de qualité à des prix abordables.</p>
+                <div class="social-icons">
+                    <a href="#"><img src="assets/imgs/social/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="assets/imgs/social/twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="assets/imgs/social/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="assets/imgs/social/pinterest.png" alt="Pinterest"></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Liens Rapides</h4>
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Produits</a></li>
+                    <li><a href="#">Nouveautés</a></li>
+                    <li><a href="#">Promotions</a></li>
+                    <li><a href="#">À propos</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Catégories</h4>
+                <ul>
+                    <li><a href="#">Électronique</a></li>
+                    <li><a href="#">Vêtements</a></li>
+                    <li><a href="#">Maison & Jardin</a></li>
+                    <li><a href="#">Sports & Loisirs</a></li>
+                    <li><a href="#">Beauté & Santé</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Informations</h4>
+                <ul>
+                    <li><a href="#">Livraison</a></li>
+                    <li><a href="#">Retours</a></li>
+                    <li><a href="#">Politique de confidentialité</a></li>
+                    <li><a href="#">Conditions d'utilisation</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul>
+                    <li>📧 contact@shopelegance.com</li>
+                    <li>📞 +33 1 23 45 67 89</li>
+                    <li>📍 123 Avenue des Champs, 75008 Paris</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2023 ShopElegance. Tous droits réservés.</p>
+            <div class="payment-methods">
+                <img src="assets/imgs/payments/visa.png" alt="Visa">
+                <img src="assets/imgs/payments/mastercard.png" alt="Mastercard">
+                <img src="assets/imgs/payments/paypal.png" alt="PayPal">
+                <img src="assets/imgs/payments/apple-pay.png" alt="Apple Pay">
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
